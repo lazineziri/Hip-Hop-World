@@ -3,8 +3,7 @@
 
 .titulli{
     width: 5%;
-    margin-left: 4%;
-    
+    margin-left: 4%;   
 }
 .titulli>img{
     background-color: white;
@@ -23,7 +22,6 @@ body{
     background-image: url("foto/backgorund.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-
 }
 .sticky {
     position: fixed;
@@ -48,22 +46,16 @@ body{
     justify-content:center;
     align-items: center;
     list-style: none;
-
-    width: 50%;
-   
+    width: 50%;   
 }
 ul li {
     width: 50%;
     height: 50%;
-
     text-decoration: none;
     text-align: center;
-
 }
 ul li a {
-    text-decoration: none;
-
-    
+    text-decoration: none;  
 }
 
 .nav-bar h1{
@@ -133,6 +125,5 @@ ul li a:hover::after {
 }
 .footer{
     background-color: #95a5a65d;
-    height: 3000px;
-    
+    height: 3000px;   
 }

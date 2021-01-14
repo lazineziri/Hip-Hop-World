@@ -48,22 +48,16 @@ body{
     justify-content:center;
     align-items: center;
     list-style: none;
-
-    width: 50%;
-   
+    width: 50%; 
 }
 ul li {
     width: 50%;
     height: 50%;
-
     text-decoration: none;
     text-align: center;
-
 }
 ul li a {
-    text-decoration: none;
-
-    
+    text-decoration: none; 
 }
 
 .nav-bar h1{

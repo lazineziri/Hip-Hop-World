@@ -23,7 +23,6 @@ body{
     background-image: url("foto/backgorund.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-
 }
 .sticky {
     position: fixed;
@@ -48,29 +47,23 @@ body{
     justify-content:center;
     align-items: center;
     list-style: none;
-
-    width: 50%;
-   
+    width: 50%;  
 }
 ul li {
     width: 50%;
     height: 50%;
-
     text-decoration: none;
     text-align: center;
 
 }
 ul li a {
-    text-decoration: none;
-
-    
+    text-decoration: none;  
 }
 
 .nav-bar h1{
     margin-left: 10px;
     margin-right: 10px;
 }
-
 
 ul {
   display: flex;
@@ -148,5 +141,4 @@ ul li a:hover::after {
 .footer{
     background-color: #95a5a65d;
     height: 177px;
-    
 }

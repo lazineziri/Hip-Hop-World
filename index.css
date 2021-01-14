@@ -130,7 +130,6 @@ ul li a:hover::after {
     width: 30%;
     border-radius:500px;
     height: 95%;
-
 }
 
 /*divi i djatht*/
@@ -165,7 +164,6 @@ ul li a:hover::after {
     height: 300px;
     width: 100%;
     border-bottom:2px white solid ;
-
 }
 .majt1{
     width: 50%; 
@@ -185,7 +183,6 @@ ul li a:hover::after {
     width: 30%;
     border-radius:500px;
     height: 95%;
-
 }
 
 /*divi i djatht*/
@@ -193,7 +190,6 @@ ul li a:hover::after {
     width: 50%;
     display: flex;
     flex-direction: column;
-
     color: white;
 }
 .tekstiImadh1{

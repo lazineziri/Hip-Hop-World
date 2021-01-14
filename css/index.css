@@ -32,7 +32,7 @@ body{
 }
 .sticky + .main {
     padding-top: 60px;
-  }
+}
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -48,22 +48,16 @@ body{
     justify-content:center;
     align-items: center;
     list-style: none;
-
-    width: 50%;
-   
+    width: 50%; 
 }
 ul li {
     width: 50%;
     height: 50%;
-
     text-decoration: none;
     text-align: center;
-
 }
 ul li a {
-    text-decoration: none;
-
-    
+    text-decoration: none;   
 }
 
 .nav-bar h1{
@@ -198,8 +192,6 @@ ul li a:hover::after {
 }
 
 /*divi i djatht*/
-
-
 .djatht1{
     width: 50%;
     display: flex;
@@ -234,5 +226,4 @@ ul li a:hover::after {
 .footer{
     background-color: #95a5a65d;
     height: 3000px;
-    
 }
