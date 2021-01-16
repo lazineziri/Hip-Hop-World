@@ -15,15 +15,15 @@
 	   </div>
 	   <div class="lista">
 		   <ul>
-			   <li><a href="index.html">home</a></li>
+			   <li><a href="index.php">home</a></li>
 			   <h1></h1>
-			   <li><a href="about.html">about</a></li>
+			   <li><a href="about.php">about</a></li>
 			   <h1></h1>
-			   <li><a href="categories.html">categories</a></li>
+			   <li><a href="categories.php">categories</a></li>
 			   <h1></h1>
-			   <li><a href="login.html">LogIn</a></li>
+			   <li><a href="login.php">LogIn</a></li>
 			   <h1></h1>
-			   <li><a href="contact.html">Contact</a></li>
+			   <li><a href="contact.php">Contact</a></li>
 		   </ul>
 	   </div>
    </div>
