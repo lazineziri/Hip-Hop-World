@@ -1,18 +1,18 @@
 <?php
-require 'variables.php';
+require 'verify.php';
 session_start();
 $username = "";
 $password = "";
-if (isset($_POST['input submit'])) {
+if (isset($_POST['login-btn'])) {
 
     $username = $_POST['username'];
     $password = $_POST['password'];
     if (variablesNotDefinedWell($username, $password)) {
-        header("Location:./contact.php");
+        header("Location:./index.php");
     } else if (usernameAndPasswordCorrect($username, $password)) {
-        header('Location:./index.php');
+        header('Location:./login.php');
     } else
-        header("Location:./contact.php");
+        header("Location:./index.php");
 }
 
 function variablesNotDefinedWell($username, $password)
