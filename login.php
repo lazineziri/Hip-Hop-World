@@ -11,7 +11,7 @@ include 'loginheader.php'?>
         <input type="text" id="username" class="input" placeholder="Username..." />
         <label class="shkronjat">Password:</label>
         <input type="password" id="password" class="input" placeholder="Password..." />
-        <input id="submit" type="submit" class="input submit" value="Log in" onclick="validate(0)" />
+        <input id="submit" type="submit" class="input submit" name = "submit" value="Log in" onclick="validate(0)" />
         </div>
         <div class="register forms hidden" id="form2">
         <label class="shkronjat">Name:</label>
@@ -22,7 +22,7 @@ include 'loginheader.php'?>
         <input type="text" class="input" placeholder="Username..." />
         <label class="shkronjat">Password:</label>
         <input type="password" class="input" placeholder="password..." />
-        <input id="submit" type="submit" class="input submit" value="Register" onclick="validate(1)" />
+        <input id="submit" type="submit" class="input submit" name = "submit" value="Register" onclick="validate(1)" />
         </div>
     </form>
 </div>

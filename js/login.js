@@ -1,59 +1,28 @@
-
-function validate(number){
-  console.log("hyri ne funksion");
-  if(number == 0){
-    var usernameValue = inputElements[0].value;
-    var passwordValue = inputElements[1].value;
-    console.log(inputElements);
-    console.log("username: "+usernameValue);
-    console.log("password: "+passwordValue);
-    if(usernameValue == "" || passwordValue == ""){
-      alert("All fields are required");
-    }
-    else{
-      alert("login success");
-    }
-  }
-  else if(number == 1){
-    var nameValue = inputElements[3].value;
-    var lastNameValue = inputElements[4].value;
-    var usernameRegValue = inputElements[5].value;
-    var passwordRegValue = inputElements[6].value;
-    console.log(inputElements);
-    console.log("name "+nameValue);
-    console.log("lastName "+lastNameValue);
-    console.log("usernameReg "+usernameRegValue);
-    console.log("passwordReg "+passwordRegValue);
-    if(nameValue == "" || lastNameValue == "" || usernameRegValue=="" || passwordRegValue == ""){
-      alert("All fields are required");
-    }
-    else{
-      alert("register success");
-    }
+function changeForm(form) {
+  let forms = document.querySelectorAll("form>div");
+  if (form == 0) {
+      forms[0].classList.remove("hidden");
+      forms[0].classList.add("form-style");
+      forms[1].classList.add("hidden");
+      forms[1].classList.remove("form-style");
+  } else {
+      forms[1].classList.remove("hidden");
+      forms[1].classList.add("form-style");
+      forms[0].classList.add("hidden");
+      forms[0].classList.remove("form-style");
   }
 }
 
+const usernameReg = /^[a-zA-Z0-9]{3,}$/; // new RegExp('')
+const passwordReg = /^[A-Z]+$/; // new RegExp('')
 
-function changeForm(number){
-  var format = document.getElementsByClassName('forms');
-  if(number == 0){
-    format[0].classList.remove("hidden");
-    format[0].classList.add("form-style");
-    format[1].classList.add("hidden");
-    format[1].classList.remove("form-style");
-  }
-  else if(number == 1){
-    format[1].classList.remove("hidden");
-    format[1].classList.add("form-style");
-    format[0].classList.add("hidden");
-    format[0].classList.remove("form-style");
-  }
+function validate() {
+  // let inputs = document.querySelectorAll("input");
+  // usrname = inputs[0].value;
+  // password = inputs[1].value;
+  // if (usernameReg.test(usrname) && password != "") {
+  //     return true;
+  // }
+  // return false;
+  return true;
 }
-
-
-var inputElements = document.getElementsByClassName("input");
-var usernameValue = inputElements[0].value;
-var passwordValue = inputElements[1].value;
-console.log(inputElements);
-console.log("username "+usernameValue);
-console.log("password "+passwordValue);
