@@ -1,5 +1,5 @@
 <?php
-include 'headers/indexheader.php'?>
+include './headers/indexheader.php'?>
 
 <div class="main">
     <div class="majt">

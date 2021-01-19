@@ -4,8 +4,7 @@
 <head>
 	<title>HIP-HOP-WORLD | Sign in</title>
 	<link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="login.css">
 	<script src="js/login.js"type="text/javascript"></script>
 </head>
 <body >

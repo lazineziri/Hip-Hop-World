@@ -20,18 +20,10 @@
     font-family: Lato, sans-serif;
 }
 body{
-    background-image: url("foto/backgorund.jpg");
+    background-image: url("foto/foto.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .main {
-    padding-top: 60px;
 }
 .nav-bar {
     display: flex;
@@ -48,7 +40,7 @@ body{
     justify-content:center;
     align-items: center;
     list-style: none;
-    width: 50%; 
+    width: 50%;   
 }
 ul li {
     width: 50%;
@@ -57,7 +49,7 @@ ul li {
     text-align: center;
 }
 ul li a {
-    text-decoration: none;   
+    text-decoration: none;  
 }
 
 .nav-bar h1{
@@ -112,111 +104,13 @@ ul li a:hover::after {
 /* Qitu kryhet navi */
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
     height: 300px;
     width: 100%;
     border-bottom:2px white solid ;
-}
-.majt{
-    width: 50%; 
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.foto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left:10%;
-    
-}
-.foto>img{
-    width: 30%;
-    border-radius:500px;
-    height: 100px;
-}
-
-/*divi i djatht*/
-
-
-.djatht{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     color: white;
-}
-.tekstiImadh{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.tekstiImadh h2{
-    font-size: 25px;
-}
-.tekstiIvogel{
-    margin-top: 5%;
-    display: flex;
-}
-.tekstiIvogel p{
     text-align: center;
-    font-size: large;
-}
-.main1{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    height: 300px;
-    width: 100%;
-    border-bottom:2px white solid ;
-}
-.majt1{
-    width: 50%; 
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.foto1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left:10%;
-    
-}
-.foto1>img{
-    width: 100%;
-    border-radius:100x;
-    height: 100%;
-}
-
-/*divi i djatht*/
-.djatht1{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-
-    color: white;
-}
-.tekstiImadh1{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.tekstiImadh1 h2{
-    font-size: 25px;
-}
-.tekstiIvogel1{
-    margin-top: 5%;
-    display: flex;
-}
-.tekstiIvogel1 p{
-    text-align: center;
-    font-size: large;
-}
-#mainForm>label{
-    border-bottom: 1px white solid;
 }
 .footer h1{
     display: flex;
@@ -225,5 +119,5 @@ ul li a:hover::after {
 }
 .footer{
     background-color: #95a5a65d;
-    height: 3000px;
+    height: 3000px;   
 }
