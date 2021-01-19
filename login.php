@@ -1,5 +1,6 @@
 <?php
-include 'loginheader.php'?>
+    include 'headers/loginheader.php'
+?>
 <div class="container">
     <div class="link-container">
         <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
@@ -27,4 +28,5 @@ include 'loginheader.php'?>
     </form>
 </div>
 <?php
-include 'footer.php'?>
+    include 'footer.php'
+?>

@@ -1,5 +1,5 @@
 <?php
-include 'categoriesheader.php'?>
+include 'headers/categoriesheader.php'?>
 <div class="main">
     <div class="majt">
         <div class="Kongtart">
