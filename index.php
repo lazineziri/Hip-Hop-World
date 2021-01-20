@@ -1,5 +1,6 @@
 <?php
-include './headers/indexheader.php'?>
+include './headers/indexheader.php'
+?>
 
 <div class="main">
     <div class="majt">
@@ -30,7 +31,7 @@ include './headers/indexheader.php'?>
         <div class="tekstiIvogel1">
             <p>Iljas Neziri aka LAZI. Njeri ma i mequm qe TAVNIKU e ka pas n 100 vjet e fundit.<br>
             I lindur ne maj te vitit 2001 u be e ditur qe Iljasi ishte i dalluar nga foshnjet tjera por ajo nuk e beri ate qe te mburrej.<br>
-            Suksesi i tij filloi ti prekte majat qysh ne vitet e para te jetes se tij ishte i shkathet ne qdo fush te jetes.<br>
+            Suksesi  ishte i shkathet ne qdo fush te jetes.<br>
             Tani po vijon studimet ne UBT per shkaqe familjare ose me shkoll ose n rrug por jo Iljasi si nje intelektual qe esht zgjodhi shkollen.<br>
             Amo nuk do te thot qe do ta perfundoj ate gjithqka varet ne afatin e shkurtit te vitit te ardhshem.</p>
         </div>
