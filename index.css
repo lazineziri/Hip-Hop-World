@@ -123,7 +123,6 @@ ul li a:hover::after {
     height: 550px;
     width: 100%;
     border-bottom:2px white solid ;
-<<<<<<< HEAD
 }
 .majt{
     width: 50%; 
@@ -154,8 +153,6 @@ ul li a:hover::after {
     width: 50%;
     display: flex;
     flex-direction: column;
-=======
->>>>>>> 98edf78785cbf2c57d166b56d3375889451c304e
     color: white;
 }
 #title{
@@ -186,7 +183,6 @@ ul li a:hover::after {
 #submit {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     margin-left:10%;
 
 }
@@ -204,12 +200,6 @@ ul li a:hover::after {
     display: flex;
     flex-direction: column;
 
-=======
-    width: 20%;
-    left: 40%;
-    margin: auto auto;
-    background-color: rgba(255, 255, 255, 0.24);
->>>>>>> 98edf78785cbf2c57d166b56d3375889451c304e
     color: white;
     padding: 10px 25px;
     border: none;
@@ -238,11 +228,5 @@ form > label{
 }
 .footer{
     background-color: #95a5a65d;
-<<<<<<< HEAD
     height: 3000px;
-
-=======
-    height: 310px;
-    
->>>>>>> 98edf78785cbf2c57d166b56d3375889451c304e
 }
