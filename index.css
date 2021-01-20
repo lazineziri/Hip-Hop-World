@@ -15,6 +15,7 @@
 
 /* Qitu ja nis navi */
 *{
+    display: flex;
     margin: 0;
     padding: 0;
     font-family: Lato, sans-serif;
@@ -101,111 +102,64 @@ ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-/* Qitu kryhet navi */
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
-    height: 300px;
+    height: 550px;
     width: 100%;
     border-bottom:2px white solid ;
-
-}
-.majt{
-    width: 50%; 
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.foto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left:10%;
-    
-}
-.foto>img{
-    width: 30%;
-    border-radius:500px;
-    height: 95%;
-}
-
-/*divi i djatht*/
-
-
-.djatht{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     color: white;
 }
-.tekstiImadh{
+#title{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-.tekstiImadh h2{
-    font-size: 25px;
-}
-.tekstiIvogel{
-    margin-top: 5%;
-    display: flex;
-}
-.tekstiIvogel p{
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    font-size: large;
-}
-.main1{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    height: 300px;
-    width: 100%;
-    border-bottom:2px white solid ;
-}
-.majt1{
-    width: 50%; 
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.foto1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left:10%;
-    
-}
-.foto1>img{
-    width: 30%;
-    border-radius:500px;
-    height: 95%;
-}
-
-/*divi i djatht*/
-.djatht1{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     color: white;
+    border-bottom: solid white 2px;
 }
-.tekstiImadh1{
+.text-field {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #b6b6b6;
+    margin-left: 25%;
+}
+#subject{
+    height: 100px;
+}
+#submit {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    width: 20%;
+    left: 40%;
+    margin: auto auto;
+    background-color: rgba(255, 255, 255, 0.24);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.tekstiImadh1 h2{
-    font-size: 25px;
+  
+#submit:hover {
+    background-color: #349dbdbe;
 }
-.tekstiIvogel1{
-    margin-top: 5%;
+  
+form > label{
     display: flex;
-}
-.tekstiIvogel1 p{
+    font-size: 20px;
     text-align: center;
-    font-size: large;
+    color: white;
+    margin-left: 25%;
 }
 .footer h1{
     display: flex;
@@ -214,5 +168,6 @@ ul li a:hover::after {
 }
 .footer{
     background-color: #95a5a65d;
-    height: 300px;
+    height: 310px;
+    
 }
