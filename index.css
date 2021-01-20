@@ -15,6 +15,7 @@
 
 /* Qitu ja nis navi */
 *{
+    display: flex;
     margin: 0;
     padding: 0;
     font-family: Lato, sans-serif;
@@ -115,14 +116,14 @@ ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-/* Qitu kryhet navi */
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
-    height: 300px;
+    height: 550px;
     width: 100%;
     border-bottom:2px white solid ;
+<<<<<<< HEAD
 }
 .majt{
     width: 50%; 
@@ -153,43 +154,39 @@ ul li a:hover::after {
     width: 50%;
     display: flex;
     flex-direction: column;
+=======
+>>>>>>> 98edf78785cbf2c57d166b56d3375889451c304e
     color: white;
 }
-.tekstiImadh{
+#title{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-.tekstiImadh h2{
-    font-size: 25px;
-}
-.tekstiIvogel{
-    margin-top: 5%;
-    display: flex;
-}
-.tekstiIvogel p{
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    font-size: large;
+    color: white;
+    border-bottom: solid white 2px;
 }
-.main1{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    height: 300px;
-    width: 100%;
-    border-bottom:2px white solid ;
+.text-field {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #b6b6b6;
+    margin-left: 25%;
 }
-.majt1{
-    width: 50%; 
-    margin-bottom: 20px;
+#subject{
+    height: 100px;
+}
+#submit {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-}
-.foto1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+<<<<<<< HEAD
     margin-left:10%;
 
 }
@@ -207,23 +204,29 @@ ul li a:hover::after {
     display: flex;
     flex-direction: column;
 
+=======
+    width: 20%;
+    left: 40%;
+    margin: auto auto;
+    background-color: rgba(255, 255, 255, 0.24);
+>>>>>>> 98edf78785cbf2c57d166b56d3375889451c304e
     color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.tekstiImadh1{
+  
+#submit:hover {
+    background-color: #349dbdbe;
+}
+  
+form > label{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.tekstiImadh1 h2{
-    font-size: 25px;
-}
-.tekstiIvogel1{
-    margin-top: 5%;
-    display: flex;
-}
-.tekstiIvogel1 p{
+    font-size: 20px;
     text-align: center;
-    font-size: large;
+    color: white;
+    margin-left: 25%;
 }
 #mainForm>label{
     border-bottom: 1px white solid;
@@ -235,6 +238,11 @@ ul li a:hover::after {
 }
 .footer{
     background-color: #95a5a65d;
+<<<<<<< HEAD
     height: 3000px;
 
+=======
+    height: 310px;
+    
+>>>>>>> 98edf78785cbf2c57d166b56d3375889451c304e
 }
