@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+.row {
+    color: white;
+    text-align: center;
+    margin-bottom: 280px;
+    margin-top: 50px;
+}
+
+.col-6 {
+    margin: 30px 0;
+}
+
+.row h2 {
+    font-size: 40px;
+}
+
+.row ul {
+    display: list-item;
+    width: auto;
+}
+
+.row ul li {
+    width: 100%;
+}
+
+.col-6 ul li {
+  list-style-type: none !important;
+}
+
+.kengetaret {
+    border-right: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .kengetaret {
+        border-right: none;
+    }
+}
