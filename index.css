@@ -1,28 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-
-
+@ -4,7 +4,7 @@
 .titulli{
     width: 5%;
     margin-left: 4%;
+    
 
 }
 .titulli>img{
     background-color: white;
-    width: 100%;
-    border-radius: 100%;
-}
-
-
-/* Qitu ja nis navi */
-*{
-    margin: 0;
-    padding: 0;
+@ -20,11 +20,19 @@
     font-family: Lato, sans-serif;
 }
 body{
     background-image: url("foto/foto.jpg");
+    background-image: url("foto/backgorund.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+
     display: flex;
 }
 .sticky {
@@ -36,18 +29,11 @@ body{
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 50px;  
-    border-bottom: 2px white solid;
-    margin-top: 10px;
-}
-.nav-bar ul {
-    display: flex;
-    flex-direction: row;
+@ -40,16 +48,22 @@ body{
     justify-content:center;
     align-items: center;
     list-style: none;
+    width: 50%;   
 
     width: 50%;
 
@@ -61,131 +47,53 @@ ul li {
 
 }
 ul li a {
+    text-decoration: none;  
     text-decoration: none;
 
 
 }
 
 .nav-bar h1{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
-ul {
-  display: flex;
-  flex-direction: row;
-  align-items: right;
-  list-style-type: none;
-  justify-content: right;
-}
-ul h1{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-ul li {
-  padding: 6px 0;
-}
-ul li a {
-  position: relative;
-  display: block;
-  padding: 4px 0;
-  font-family: Lato, sans-serif;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-ul li a::after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: white;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
-}
-ul li a:hover {
-  color: #95a5a6;
-}
-ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-.main{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    height: 550px;
+@ -109,7 +123,6 @@ ul li a:hover::after {
+    height: 300px;
     width: 100%;
     border-bottom:2px white solid ;
+
 }
 .majt{
     width: 50%; 
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+@ -121,14 +134,16 @@ ul li a:hover::after {
 .foto{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     justify-content: left;
     margin-left:10%;
+    
 
 }
 .foto>img{
     display: flex;
     width: 30%;
+    border-radius:500px;
+    height: 95%;
     border-radius:100px;
     height: 100px;
     
 }
 
 /*divi i djatht*/
-
-
-.djatht{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-#title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: white;
-    border-bottom: solid white 2px;
-}
-.text-field {
-    margin-top: 6px;
-    margin-bottom: 16px;
-    width: 50%;
-    padding: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.473);
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #b6b6b6;
-    margin-left: 25%;
-}
-#subject{
-    height: 100px;
-}
-#submit {
-    display: flex;
+@ -176,19 +191,22 @@ ul li a:hover::after {
+    flex-direction: row;
     justify-content: center;
     margin-left:10%;
+    
 
 }
 .foto1>img{
+    width: 30%;
+    border-radius:500px;
+    height: 95%;
     width: 40%;
     border-radius:50x;
     height: 90%;
@@ -200,22 +108,11 @@ ul li a:hover::after {
     flex-direction: column;
 
     color: white;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
-  
-#submit:hover {
-    background-color: #349dbdbe;
-}
-  
-form > label{
-    display: flex;
-    font-size: 20px;
+.tekstiImadh1{
+@ -207,6 +225,9 @@ ul li a:hover::after {
     text-align: center;
-    color: white;
-    margin-left: 25%;
+    font-size: large;
 }
 #mainForm>label{
     border-bottom: 1px white solid;
@@ -223,9 +120,11 @@ form > label{
 .footer h1{
     display: flex;
     justify-content: center;
-    color: white;
+@ -214,5 +235,6 @@ ul li a:hover::after {
 }
 .footer{
     background-color: #95a5a65d;
+    height: 300px;
     height: 3000px;
+
 }
