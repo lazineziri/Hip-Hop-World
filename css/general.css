@@ -15,7 +15,7 @@ overflow: auto;
 }
 
 body{
-    background-image: url("../foto/foto.jpg");
+    background-image: url("../images/foto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

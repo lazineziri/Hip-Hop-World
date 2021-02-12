@@ -89,7 +89,7 @@
   content: '\f00d';
 }
 
-@media all and (max-width: 650px){
+@media all and (max-width: 800px){
     .navBar{
         padding: 5px 30px;
     }

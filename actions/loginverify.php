@@ -1,6 +1,6 @@
 <?php
+include "databaza.php";
 require 'verify.php';
-session_start();
 $username = "";
 $password = "";
 if (isset($_POST['login-btn'])) {
@@ -8,11 +8,12 @@ if (isset($_POST['login-btn'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     if (variablesNotDefinedWell($username, $password)) {
-        header("Location:./index.php");
+        header('Location: ../php/login.php');
     } else if (usernameAndPasswordCorrect($username, $password)) {
-        header('Location:./login.php');
-    } else
-        header("Location:./index.php");
+        header('Location: ../php/index.php');
+    } else {
+        header('Location: ../php/login.php');
+    }
 }
 
 function variablesNotDefinedWell($username, $password)
@@ -20,7 +21,6 @@ function variablesNotDefinedWell($username, $password)
     if (empty($username) || empty($password)) {
         return true;
     }
-    return false;
 }
 
 function usernameAndPasswordCorrect($username, $password)

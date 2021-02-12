@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
+ul::marker {
+    color: transparent;
+}
+
 .row {
     color: white;
     text-align: center;
@@ -33,7 +37,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .col-6 {
+        margin: 10px 0;
+    }
     .kengetaret {
         border-right: none;
+        padding-bottom: 30px;
+        border-bottom: 2px solid white;
     }
 }
