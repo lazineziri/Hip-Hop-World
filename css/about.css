@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+.main{
+	margin-bottom: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.main p {
+    margin-top: 30px;
+    padding: 15px;  
+}

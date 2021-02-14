@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+body{
+    background-image: url("../foto/foto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+form {
+    text-align: center;
+}
+label{
+    display: inline-block;
+}
+.text-field {
+    margin: 10px auto;
+    padding: 12px;
+    min-width: 300px;
+    max-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #b6b6b6;
+}
+#subject{
+    height: 100px;
+}
+#submit {
+    margin: 20px auto;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+}
+  
+#submit:hover {
+    background-color: #02d185;
+}
+
+#submit:focus {
+    transform: scale(0.9);
+    outline: none;
+}
+  
+form > label{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 400px) {
+    .text-field {
+        min-width: 250px;
+        max-width: 25o0px;
+    }
+}

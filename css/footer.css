@@ -1,0 +1,12 @@
+.footer{
+	position: relative;
+ 	background-color: #95a5a65d;
+	padding: 20px;
+	border-top: 2px white solid;
+}
+
+.footer h1{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
