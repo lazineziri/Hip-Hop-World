@@ -18,39 +18,41 @@
 </head>
 <body>
     <?php include "../inc/header.php"; ?>
-    <div class="container">
-        <div class="link-container">
-            <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
-            <a href="#" onclick="changeForm(1)">Register</a>
+    <div class="main">
+        <div class="container">
+            <div class="link-container">
+                <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
+                <a href="#" onclick="changeForm(1)">Register</a>
+            </div>
+            <?php include "../actions/loginfunction.php"; ?>
+            <form id="mainForm" method="POST" onsubmit="return validate()" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <div class="login forms form-style">
+                    <label class="shkronjat">Username:</label>
+                    <input type="text" id="username" class="input" placeholder="Username..." name="username" required/>
+                    <label class="shkronjat">Password:</label>
+                    <input type="password" id="password" class="input" placeholder="Password..." name="password" required/>
+                    <br>
+                    <span class="wrong"><?php echo $loginError; ?></span>
+                    <button id="submit" type="submit" class="input submit" name = "login-btn" value="Log in" onclick="validate(0)">Log In</button>
+                </div>
+            </form>
+            <?php include "../actions/signupfunction.php"; ?>
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <div class="register forms hidden" id="form2">
+                    <label class="shkronjat">Name:</label>
+                    <input type="text" name="firstName" class="input" placeholder="Name..." required/>
+                    <label class="shkronjat">Lastname:</label>
+                    <input type="text" name="lastName" class="input" placeholder="Last name..." required/>
+                    <label class="shkronjat">Username:</label>
+                    <input type="text" name="users_name" class="input" placeholder="Username..." required/>
+                    <label class="shkronjat">Password:</label>
+                    <input type="password" name="users_password" class="input" placeholder="Password..." required/>
+                    <br>
+                    <span class="wrong"><?php echo $signupError; ?></span>
+                    <button id="submit" type="submit" class="input submit" name = "signup-btn" value="Register" onclick="validate(1)">Sign Up</button>
+                </div>
+            </form>
         </div>
-        <?php include "../actions/loginfunction.php"; ?>
-        <form id="mainForm" method="POST" onsubmit="return validate()" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            <div class="login forms form-style">
-                <label class="shkronjat">Username:</label>
-                <input type="text" id="username" class="input" placeholder="Username..." name="username" required/>
-                <label class="shkronjat">Password:</label>
-                <input type="password" id="password" class="input" placeholder="Password..." name="password" required/>
-                <br>
-                <span class="wrong"><?php echo $loginError; ?></span>
-                <button id="submit" type="submit" class="input submit" name = "login-btn" value="Log in" onclick="validate(0)">Log In</button>
-            </div>
-        </form>
-        <?php include "../actions/signupfunction.php"; ?>
-        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            <div class="register forms hidden" id="form2">
-                <label class="shkronjat">Name:</label>
-                <input type="text" name="firstName" class="input" placeholder="Name..." required/>
-                <label class="shkronjat">Lastname:</label>
-                <input type="text" name="lastName" class="input" placeholder="Last name..." required/>
-                <label class="shkronjat">Username:</label>
-                <input type="text" name="users_name" class="input" placeholder="Username..." required/>
-                <label class="shkronjat">Password:</label>
-                <input type="password" name="users_password" class="input" placeholder="Password..." required/>
-                <br>
-                <span class="wrong"><?php echo $signupError; ?></span>
-                <button id="submit" type="submit" class="input submit" name = "signup-btn" value="Register" onclick="validate(1)">Sign Up</button>
-            </div>
-        </form>
     </div>
     <script type="text/javascript" src="../js/navbar.js"></script>
     <?php include '../inc/footer.php'; ?>

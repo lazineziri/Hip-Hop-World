@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
+.main {
+  height: 100%;
+}
+
 .container {
   width: 500px;
   min-height: 270px;
