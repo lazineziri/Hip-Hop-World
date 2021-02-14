@@ -18,8 +18,7 @@
 </head>
 <body>
     <?php include "../inc/header.php"; ?>
-    <div class="main">
-        <div class="container">
+    <div class="container">
         <div class="link-container">
             <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
             <a href="#" onclick="changeForm(1)">Register</a>
@@ -52,7 +51,6 @@
                 <button id="submit" type="submit" class="input submit" name = "signup-btn" value="Register" onclick="validate(1)">Sign Up</button>
             </div>
         </form>
-    </div>
     </div>
     <script type="text/javascript" src="../js/navbar.js"></script>
     <?php include '../inc/footer.php'; ?>

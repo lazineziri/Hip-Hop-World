@@ -1,5 +1,7 @@
 .footer{
+	margin-top: 40px;
 	position: relative;
+	bottom: 0;
  	background-color: #95a5a65d;
 	padding: 20px;
 	border-top: 2px white solid;
