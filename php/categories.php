@@ -14,40 +14,31 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/general.css">
     <script src="https://kit.fontawesome.com/71ac44bd60.js" crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
+    <script src="../js/navbar.js"></script>
 </head>
 <body>
     <?php include "../actions/headercheck.php"; ?>
     <div class="row">
-        <div class="col-6">
-            <div class="kengetaret">
-                <h2>Këngtarët</h2>
-                <br>
-                <ul>
-                    <li>Bajram Gigolli</li>
-                    <li>Travis Skotaj</li>
-                    <li>E ShtuneDiela</li>
-                    <li>Drake</li>
-                    <li>I Ardhmi</li>
-                    <li>Xinxifie Lopez</li>
-                    <li>Rihankua</li>
-                    <li>Celsat e Lizes</li>
-                    <li>Halil Ziu</li>
-                </ul>
-            </div> 
-        </div>
-        <div class="col-6">
-            <div class="Artistat">
-                <h2>Artistat</h2>
-                <br>
-                <ul>
-                    <li>Mc Kresha TC</li>
-                    <li>Laazi TC</li>
-                </ul>
-            </div>
+        <div class="Artistat col-12">
+            <h2>Artistat</h2>
+            <br>
+            <ul>
+                <?php
+                    $sql2 = "SELECT * FROM postimet";
+                    $result2 = $conn->query($sql2);
+                    
+                    if ($result2->num_rows > 0) {
+                        while($row = $result2->fetch_assoc()) {
+                            $id = $row['id'];
+                            $titulli = $row['titulli'];
+
+                            echo "<li>$titulli</li>";
+                        }
+                    }
+                ?>
+            </ul>
         </div>
     </div>
-    <script type="text/javascript" src="../js/navbar.js"></script>
     <?php include '../inc/footer.php'?>
 </body>
 </html>
