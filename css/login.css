@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+.main {
+  height: 100%;
+}
+
+.container {
+  width: 500px;
+  min-height: 270px;
+  height: auto;
+  margin: 125px auto;
+  margin-bottom: 250px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(141, 130, 130, 0.781);
+  font-family:Lato, sans-serif;
+	border: 1px white solid;
+	border-bottom: 2px white solid;    
+}
+
+.hidden {
+  display: none;
+}
+  
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+}
+  
+.link-container a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid grey;
+}
+  
+.link-container a:first-child {
+  border-right: 2px solid grey;
+}
+
+.link-container>a:hover {
+  background-color: #000000;
+  color: white;
+  transition: all 0.2s ease;
+  border-radius: 10px ;
+}
+
+.form-style {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.form-style label {
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.form-style .input {
+  margin-top: 10px;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  border: 0px;
+  padding-left: 10px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #b6b6b6;
+}
+
+.forms {
+  height: auto;
+}
+
+#submit {
+  width: 20%;
+  left: 40%;
+  background-color: #aca8a8b0;
+  margin: 20px 0;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+#submit:hover{
+  background-color: #89a0a7be;
+}
+.shkronjat{
+	border-top: 1px white solid;
+  padding: 10px;
+}
+.input{
+	border-bottom: 1px white solid;
+}
+
+.wrong {
+  color: #ff5858;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 300px;
+  }
+}
