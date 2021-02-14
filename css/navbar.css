@@ -1,0 +1,125 @@
+/* Navigation bar classes */
+.navBar {
+  padding: 10px 30px;
+  border-bottom: 3px solid white;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar ul {
+    margin: 5px 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.navBar ul li.item {
+  position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+.navBar ul li.item:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    transition: all 300s linear;
+}
+
+.navBar ul li.item:hover:after{
+    opacity: 1;
+}
+
+.navBar ul li a{
+  color: white;
+  font-size: 17px;
+  transition: 300ms;
+}
+
+.navBar ul li.logo{
+    flex: 1;
+    cursor: default;
+    user-select: none;
+    padding: 0;
+}
+
+.navBar ul li.logo img {
+  width: 50px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.navBar ul li:hover a{
+    opacity: 0.5; 
+}
+
+.navBar ul li i{
+  font-size: 23px;
+}
+
+.navBar ul li.toggle{
+  display: none;
+}
+
+.navBar ul li.toggle.hide i:before{
+  content: '\f00d';
+}
+/* Burger icon */
+#burger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+#burger-icon span {
+  width: 30px;
+  height: 3.5px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin: 3px 0;
+  transition: 400ms;
+}
+/* Turning the icon into an X */
+.change #bar1 {transform: rotate(-45deg) translate(-5px,8px);}
+.change #bar2 {opacity: 0;}
+.change #bar3 {transform: rotate(45deg) translate(-5px,-8.5px);}
+
+@media all and (max-width: 800px){
+    .navBar{
+        padding: 5px 30px;
+    }
+    .navBar ul li.active {
+      border: 0;
+      opacity: 0.5;
+    }
+    .navBar ul li.item{
+        width: 100%;
+        display: none;
+    }
+    .navBar ul li.item.show{
+      display: block;
+    }
+    .navBar ul li.toggle,
+    .navBar ul li span{
+      display: block;
+    }
+    .navBar ul li.item:hover{
+      opacity: 0.5;
+    }
+    .navBar ul li.item:hover:after{
+      opacity: 0;
+    }
+}
