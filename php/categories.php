@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/general.css">
-    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script src="../js/navbar.js"></script>
 </head>
 <body>
     <?php include "../actions/headercheck.php"; ?>

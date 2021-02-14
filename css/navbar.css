@@ -3,6 +3,16 @@
   padding: 10px 30px;
   border-bottom: 3px solid white;
 }
+/* Nav bar colors */
+.navBar-red {background-color: var(--red);}
+.navBar-blue {background-color: var(--blue);}
+.navBar-indigo {background-color: var(--indigo);}
+.navBar-green {background-color: var(--green);}
+.navBar-yellow {background-color: var(--yellow);}
+.navBar-orange {background-color: var(--orange);}
+.navBar-purple {background-color: var(--purple);}
+.navBar-pink {background-color: var(--pink);}
+.navBar-black {background-color: var(--black);}
 
 .navBar a {
   text-decoration: none;
@@ -78,24 +88,6 @@
 .navBar ul li.toggle.hide i:before{
   content: '\f00d';
 }
-/* Burger icon */
-#burger-icon {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-#burger-icon span {
-  width: 30px;
-  height: 3.5px;
-  border-radius: 5px;
-  background-color: #FFFFFF;
-  margin: 3px 0;
-  transition: 400ms;
-}
-/* Turning the icon into an X */
-.change #bar1 {transform: rotate(-45deg) translate(-5px,8px);}
-.change #bar2 {opacity: 0;}
-.change #bar3 {transform: rotate(45deg) translate(-5px,-8.5px);}
 
 @media all and (max-width: 800px){
     .navBar{
@@ -112,8 +104,7 @@
     .navBar ul li.item.show{
       display: block;
     }
-    .navBar ul li.toggle,
-    .navBar ul li span{
+    .navBar ul li.toggle{
       display: block;
     }
     .navBar ul li.item:hover{
