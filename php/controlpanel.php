@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/general.css">
-    <script src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
 </head>
 <body style="text-align:center; color: white;">
     <?php 

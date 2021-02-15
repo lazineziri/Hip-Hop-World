@@ -1,14 +1,12 @@
 <?php
-$serverName="localhost";
-$dbUser="root";
-$dbPass="";
-$dbName="Hip-Hop-World";
+    $serverName="localhost";
+    $dbUser="root";
+    $dbPass="";
+    $dbName="Hip-Hop-World";
 
-$conn = mysqli_connect($serverName,$dbUser,$dbPass,$dbName);
+    $conn = new mysqli($serverName,$dbUser,$dbPass,$dbName);
 
-if(!$conn){
-    die("Connection failed: ". mysqli_connect_error());
-}
-
-
+    if(!$conn){
+        die("Connection failed: ". mysqli_connect_error());
+    }
 ?>

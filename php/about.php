@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <script type="text/javascript" src="../js/navbar.js"></script>
 </head>
 <body>
     <?php include "../actions/headercheck.php"; ?>
@@ -20,8 +21,6 @@
         <h1>HIP HOP WRLD</h1>
         <p>Hello we are Hip-Hop-WRLD. We try to provide the best content possible in world of music.</p>
     </div>
-
-    <script type="text/javascript" src="../js/navbar.js"></script>
     <?php include '../inc/footer.php'?>
 </body>
 </html>

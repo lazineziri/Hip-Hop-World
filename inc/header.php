@@ -1,4 +1,4 @@
-<nav class="navBar navBar-black">
+<nav class="navBar">
     <ul>
         <li class="logo"><img src="../images/logo.png"></li>
         <li class="item"><a href="../php/index.php">Home</a></li>
@@ -6,6 +6,12 @@
         <li class="item"><a href="../php/contact.php">Contact Us</a></li>
         <li class="item"><a href="../php/categories.php">Categories</a></li>
         <li class="item"><a href="../php/login.php">Login</a></li>
-        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li class="toggle">
+        	<a href="#" id="burger-icon">
+        		<span id="bar1"></span>
+        		<span id="bar2"></span>
+        		<span id="bar3"></span>
+        	</a>
+        </li>
     </ul>
 </nav>
