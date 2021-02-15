@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/general.css">
-    <script src="https://kit.fontawesome.com/71ac44bd60.js" crossorigin="anonymous"></script>
     <script src="../js/login.js"type="text/javascript"></script>
 </head>
 <body>
