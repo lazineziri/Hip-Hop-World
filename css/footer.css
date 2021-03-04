@@ -1,0 +1,20 @@
+.footer{
+	/* position: static; */
+ 	background-color: #95a5a65d;
+	padding: 20px;
+	border-top: 2px white solid;
+
+}
+#footer{
+	position: static;
+	margin-bottom: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
+.footer h1{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
